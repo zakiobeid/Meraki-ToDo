@@ -3,7 +3,7 @@
 @import "./base/variables";
 @import "./base/mixins";
 
-.todo {
+.todo-app {
   display: block;
   font-size: 20px;
   margin: 0 auto;
@@ -11,4 +11,41 @@
   width: 570px;
   background-color: $bgc;
   font-family: "Roboto", sans-serif;
+  padding: 25px 14px;
+  .todo-form {
+    width: 100%;
+    position: relative;
+    border: 19px solid $border-green;
+    border-radius: 7px;
+    background-color: $border-green;
+    .todo-form__input {
+      width: 96%;
+      background-color: rgba($white, 0.3);
+      height: 58px;
+      outline: none;
+      border-radius: 7px;
+      padding-left: 20px;
+      border: 0px;
+      &::placeholder {
+        color: white;
+        text-shadow: 0px 0px 6px rgba(25, 186, 153, 1);
+        font-size: 16px;
+      }
+    }
+    .todo-form__button {
+      position: absolute;
+      top: 18px;
+      right: -2px;
+      text-decoration: none;
+      &::after {
+        font-family: icons;
+        content: "\e802";
+        background-color: $white;
+        border-radius: 50%;
+        color: $border-green;
+        padding: 18px 23px;
+        font-size: 22px;
+      }
+    }
+  }
 }
