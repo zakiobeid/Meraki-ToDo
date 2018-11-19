@@ -1,0 +1,14 @@
+@import "./base/reset";
+@import "./base/fonts";
+@import "./base/variables";
+@import "./base/mixins";
+
+.todo {
+  display: block;
+  font-size: 20px;
+  margin: 0 auto;
+  padding: 0;
+  width: 570px;
+  background-color: $bgc;
+  font-family: "Roboto", sans-serif;
+}
